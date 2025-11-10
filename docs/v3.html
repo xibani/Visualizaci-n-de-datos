@@ -7545,13 +7545,17 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
+
+<span class="c1"># Para exportar el plotly a HTML</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.io</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pio</span>
+<span class="n">pio</span><span class="o">.</span><span class="n">renderers</span><span class="o">.</span><span class="n">default</span> <span class="o">=</span> <span class="s2">"notebook_connected"</span>
 </pre></div>
 </div>
 </div>
@@ -7574,11 +7578,11 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Carga de los precios de doge</span>
-<span class="n">df_doge</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/DOGE-USD.csv"</span><span class="p">)</span>
+<span class="n">df_doge</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/DOGE-USD-crop.csv"</span><span class="p">)</span>
 <span class="n">df_doge</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -7590,7 +7594,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7622,53 +7626,53 @@ a.anchor-link {
 <tbody>
 <tr>
 <th>0</th>
-<td>2017-11-09</td>
-<td>0.001207</td>
-<td>0.001415</td>
-<td>0.001181</td>
-<td>0.001415</td>
-<td>0.001415</td>
-<td>6259550.0</td>
+<td>2024-03-01</td>
+<td>0.117167</td>
+<td>0.145261</td>
+<td>0.117167</td>
+<td>0.139557</td>
+<td>0.139557</td>
+<td>3758449851</td>
 </tr>
 <tr>
 <th>1</th>
-<td>2017-11-10</td>
-<td>0.001421</td>
-<td>0.001431</td>
-<td>0.001125</td>
-<td>0.001163</td>
-<td>0.001163</td>
-<td>4246520.0</td>
+<td>2024-03-02</td>
+<td>0.139614</td>
+<td>0.150064</td>
+<td>0.136927</td>
+<td>0.142121</td>
+<td>0.142121</td>
+<td>3588994520</td>
 </tr>
 <tr>
 <th>2</th>
-<td>2017-11-11</td>
-<td>0.001146</td>
-<td>0.001257</td>
-<td>0.001141</td>
-<td>0.001201</td>
-<td>0.001201</td>
-<td>2231080.0</td>
+<td>2024-03-03</td>
+<td>0.142131</td>
+<td>0.155759</td>
+<td>0.129840</td>
+<td>0.153836</td>
+<td>0.153836</td>
+<td>4012808483</td>
 </tr>
 <tr>
 <th>3</th>
-<td>2017-11-12</td>
-<td>0.001189</td>
-<td>0.001210</td>
-<td>0.001002</td>
-<td>0.001038</td>
-<td>0.001038</td>
-<td>3288960.0</td>
+<td>2024-03-04</td>
+<td>0.153941</td>
+<td>0.184307</td>
+<td>0.148781</td>
+<td>0.182910</td>
+<td>0.182910</td>
+<td>6348241494</td>
 </tr>
 <tr>
 <th>4</th>
-<td>2017-11-13</td>
-<td>0.001046</td>
-<td>0.001212</td>
-<td>0.001019</td>
-<td>0.001211</td>
-<td>0.001211</td>
-<td>2481270.0</td>
+<td>2024-03-05</td>
+<td>0.182804</td>
+<td>0.205439</td>
+<td>0.130103</td>
+<td>0.153937</td>
+<td>0.153937</td>
+<td>9368269377</td>
 </tr>
 </tbody>
 </table>
@@ -7682,7 +7686,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Transformar a datetime la variable Date</span>
@@ -7703,19 +7707,19 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
-RangeIndex: 2335 entries, 0 to 2334
+RangeIndex: 29 entries, 0 to 28
 Data columns (total 7 columns):
  #   Column     Non-Null Count  Dtype              
 ---  ------     --------------  -----              
- 0   Date       2335 non-null   datetime64[ns, UTC]
- 1   Open       2334 non-null   float64            
- 2   High       2334 non-null   float64            
- 3   Low        2334 non-null   float64            
- 4   Close      2334 non-null   float64            
- 5   Adj Close  2334 non-null   float64            
- 6   Volume     2334 non-null   float64            
-dtypes: datetime64[ns, UTC](1), float64(6)
-memory usage: 127.8 KB
+ 0   Date       29 non-null     datetime64[ns, UTC]
+ 1   Open       29 non-null     float64            
+ 2   High       29 non-null     float64            
+ 3   Low        29 non-null     float64            
+ 4   Close      29 non-null     float64            
+ 5   Adj Close  29 non-null     float64            
+ 6   Volume     29 non-null     int64              
+dtypes: datetime64[ns, UTC](1), float64(5), int64(1)
+memory usage: 1.7 KB
 </pre>
 </div>
 </div>
@@ -7737,7 +7741,7 @@ memory usage: 127.8 KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Se eliminan filas con posibles valores faltantes</span>
@@ -7755,7 +7759,7 @@ memory usage: 127.8 KB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>Date         0
 Open         0
@@ -7785,7 +7789,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Figura OHLC</span>
@@ -7820,6 +7824,44 @@ dtype: int64</pre>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<script type="text/javascript">
+        window.PlotlyConfig = {MathJaxConfig: 'local'};
+        if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+        </script>
+<script type="module">import "https://cdn.plot.ly/plotly-3.1.1.min"</script>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div> <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script type="text/javascript">if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script> <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+<script charset="utf-8" crossorigin="anonymous" integrity="sha256-HUEFyfiTnZJxCxur99FjbKYTvKSzwDaD3/x5TqHpFu4=" src="https://cdn.plot.ly/plotly-3.1.1.min.js"></script> <div class="plotly-graph-div" id="b735e086-15bf-4257-8d72-9345aee5f678" style="height:525px; width:100%;"></div> <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("b735e086-15bf-4257-8d72-9345aee5f678")) {                    Plotly.newPlot(                        "b735e086-15bf-4257-8d72-9345aee5f678",                        [{"close":{"dtype":"f8","bdata":"gsR29wDdwT+Sk4lbBTHCPz1GeeblsMM\u002fC0EOSphpxz8gelImNbTDP48zTdh+MsQ\u002f0sjnFU89xD9r8L4qFyrFPzSBIhYx7MY\u002fVdl3RfC\u002fxT9CIQIOoUrHP0Vighq+hcU\u002fk6rtJvimxT9Qwkzbv7LGP4vAWN\u002fA5MQ\u002fVpv\u002fVx05wj\u002fFVWXfFcHDPwq7KHrgY8I\u002fqiwKuyh6wD\u002fyW3Sy1HrDP5lLqrab4MM\u002fpyOAm8WLwz+zCMVW0LTEP7H6IwwDlsY\u002fzhjmBG1yxj9jKv2Es1vHP5RNucK7XMg\u002fD\u002fCkhcsqzD9Uw35PrFPLPw=="},"high":{"dtype":"f8","bdata":"TS8xlumXwj\u002fxSScSTDXDP4lhhzHp78M\u002fcEG2LF+Xxz87Vik900vKP+qWHeIftsY\u002ftDnObcK9xD9KRs7CnnbGP0xV2uIan8c\u002fpYRgVb38xj+P4hx1dFzHP2Zn0TsVcMc\u002fIT6w479Axj+TUWUYd4PIP58e2zLgLMc\u002fYW73cp8cxT87rHDLR1LEP3v2XKYmwcM\u002fiSe7mdGPwj9Ibk26LZHDP4ULeQQ3UsQ\u002fTMKFPIIbxT8FTyFX6lnGP4JzRpT2Bsc\u002fp1oLs9DOxz9Djxg9t9DHP+uQm+EGfMg\u002fk45yMJsAzT+ad5yiI7nMPw=="},"low":{"dtype":"f8","bdata":"bqErEaj+vT\u002f\u002fPXjt0obBP8o329yYnsA\u002fDhKifEELwz89RQ4RN6fAP32tS43Qz8I\u002fWkbqPZXTwj9fs1w2OufDPyRDjq1nCMU\u002fZFdaRuo9xT+bVDTW\u002fs7EP2+5+rFJfsQ\u002fih74GKw4xT\u002fYYrfPKjPFP6Z9c3\u002f1uMM\u002fJZASu7a3wT8JbM7BM6HBP+un\u002f6z58cE\u002f27+y0qQUwD+d1JelnZq\u002fP19cqtIW18I\u002fj8TL07miwj9V9l0R\u002fG\u002fDPzm2niEcs8Q\u002fvxBy3v\u002fHxT9li6Td6GPGP0EPtW0YBcc\u002fmDCale1DyD8K9Ik8SbrKPw=="},"open":{"dtype":"f8","bdata":"bqErEaj+vT\u002fDKAge397BPyC3Xz5ZMcI\u002fjLtBtFa0wz9h+8kYH2bHP921hHzQs8M\u002fjzNN2H4yxD93+GuyRj3EP2vwvioXKsU\u002fNIEiFjHsxj+3RC44g7\u002fFPxqk4CnkSsc\u002fHeVgNgGGxT+Tqu0m+KbFP\u002fXx0He3ssY\u002fi8BY38DkxD\u002fqWRDK+zjCPw+1bRgFwcM\u002fCrsoeuBjwj8m32xzY3rAP\u002fJbdLLUesM\u002fcM6I0t7gwz+nI4CbxYvDP7MIxVbQtMQ\u002fsfojDAOWxj\u002fOGOYEbXLGP2Mq\u002fYSzW8c\u002f9bhvtU5cyD8P8KSFyyrMPw=="},"x":["2024-03-01T00:00:00.000000000","2024-03-02T00:00:00.000000000","2024-03-03T00:00:00.000000000","2024-03-04T00:00:00.000000000","2024-03-05T00:00:00.000000000","2024-03-06T00:00:00.000000000","2024-03-07T00:00:00.000000000","2024-03-08T00:00:00.000000000","2024-03-09T00:00:00.000000000","2024-03-10T00:00:00.000000000","2024-03-11T00:00:00.000000000","2024-03-12T00:00:00.000000000","2024-03-13T00:00:00.000000000","2024-03-14T00:00:00.000000000","2024-03-15T00:00:00.000000000","2024-03-16T00:00:00.000000000","2024-03-17T00:00:00.000000000","2024-03-18T00:00:00.000000000","2024-03-19T00:00:00.000000000","2024-03-20T00:00:00.000000000","2024-03-21T00:00:00.000000000","2024-03-22T00:00:00.000000000","2024-03-23T00:00:00.000000000","2024-03-24T00:00:00.000000000","2024-03-25T00:00:00.000000000","2024-03-26T00:00:00.000000000","2024-03-27T00:00:00.000000000","2024-03-28T00:00:00.000000000","2024-03-29T00:00:00.000000000"],"type":"ohlc"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"rangeslider":{"visible":true},"title":{"text":"Fecha"}},"title":{"text":"Dogecoin \u2014 OHLC"},"yaxis":{"title":{"text":"Precio"}}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('b735e086-15bf-4257-8d72-9345aee5f678');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };            </script> </div>
+</div>
 </div>
 </div>
 </div>
